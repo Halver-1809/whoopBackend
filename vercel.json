@@ -8,8 +8,16 @@
     ],
     "routes": [
       {
+        "src": "/authenticate",
+        "dest": "src/app.js"
+      },
+      {
+        "src": "/callback",
+        "dest": "src/app.js"
+      },
+      {
         "src": "/(.*)",
-        "dest": "/src/app.js"
+        "dest": "src/app.js" 
       }
     ]
   }
